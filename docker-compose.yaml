@@ -10,7 +10,7 @@ services:
   localstack:
     image: localstack/localstack:latest
     environment: 
-      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_DEFAULT_REGION=eu-west-2
       - EDGE_PORT=4566
       - SERVICES=dynamodb
       - KINESIS_PROVIDER=kinesalite
