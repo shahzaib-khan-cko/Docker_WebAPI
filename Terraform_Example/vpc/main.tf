@@ -180,7 +180,7 @@ resource "aws_alb" "alb" {
 resource "aws_alb_target_group" "alb-target-group" {
   health_check {
     matcher = "200,301,302"
-    path = "/"
+    path = "/weatherforecast"
   }
 
   name     = "alb-target-group"
